@@ -9,6 +9,7 @@
 .. moduleauthor:: Craig Arthur <craig.arthur@ga.gov.au>
 
 """
+from builtins import str
 
 import os
 import time
@@ -379,7 +380,7 @@ def loadTracks(trackfile):
     :return: list of :class:`Track` objects.
 
     """
-    if not isinstance(trackfile, basestring):
+    if not isinstance(trackfile, str):
         raise TypeError("Track file name is not a string: {0}".\
                         format(trackfile))
     if os.path.exists(trackfile):
