@@ -9,6 +9,7 @@
 .. moduleauthor:: Dale Roberts <dale.roberts@ga.gov.au>
 
 """
+from builtins import str
 
 import io
 from configparser import RawConfigParser

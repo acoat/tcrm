@@ -15,6 +15,7 @@ gridSpace). This uses the method of kernel density estimators to
 determine the distributions.
 
 """
+from builtins import str
 
 import os
 import sys

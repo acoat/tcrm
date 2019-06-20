@@ -379,7 +379,7 @@ def loadTracks(trackfile):
     :return: list of :class:`Track` objects.
 
     """
-    if not isinstance(trackfile, str):
+    if not isinstance(trackfile, basestring):
         raise TypeError("Track file name is not a string: {0}".\
                         format(trackfile))
     if os.path.exists(trackfile):

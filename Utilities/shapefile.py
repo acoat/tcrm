@@ -9,6 +9,8 @@ Compatible with Python versions 2.4-3.x
 
 __version__ = "1.2.0"
 
+from builtins import str
+
 from struct import pack, unpack, calcsize, error
 import os
 import sys

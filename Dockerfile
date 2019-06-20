@@ -64,6 +64,12 @@ RUN pip install simplejson==3.16.0
 # sqlite in conda is not a pip package but an apt-get package
 RUN apt-get install -y sqlite3 libsqlite3-dev
 RUN pip install statsmodels==0.9.0
+RUN pip install "xarray<0.12"
+RUN pip install affine
+RUN pip install configparser
+RUN pip install yaml-configuration 
+RUN pip install tqdm
+RUN pip install future
 # libgdal was already installed as an apt-get package
 # gdal was already installed as an apt-get package
 

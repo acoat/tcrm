@@ -11,6 +11,7 @@
 Define the class for sampling tropical cyclone origins.
 
 """
+from builtins import str
 
 from os.path import join as pjoin
 import logging

@@ -31,6 +31,7 @@ be found in the ``PYTHONPATH`` directory.
     module load gdal/1.11.1-python
 
 """
+from builtins import str
 
 from shutil import copyfile, rmtree
 import glob
