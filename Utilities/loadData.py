@@ -399,7 +399,7 @@ def date2ymdh(dates, datefmt='%Y-%m-%d %H:%M:%S'):
             d = datetime.strptime(str(dates[i]), datefmt)
         except ValueError as e:
             LOG.exception("Error in date information for record {0}".format(i))
-            LOG.exception(e.message)
+            LOG.exception(repr(e))
             raise
         else:
             year[i] = d.year
@@ -455,7 +455,7 @@ def parseDates(data, indicator, datefmt='%Y-%m-%d %H:%M:%S'):
         except (ValueError, KeyError):
             if hour.max() >= 100:
                 minute = np.mod(hour, 100)
-                hour = hour / 100
+                hour = hour // 100
             else:
                 LOG.warning("Missing minute data from input data" + \
                                "- setting minutes to 00 for all times")
